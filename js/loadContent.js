@@ -1,10 +1,14 @@
 var loadContent = function() {
 	var hash = window.location.hash.substring(1) || '/about';
-	var url = "content" + hash + ".html";
+	var url = "content/" + hash + ".html";
 	
+	// Empty content
+	$("#content").empty();
+	
+	// Load content using AJAX
 	$.ajax({url: url, 
-        beforeSend: function( xhr ) {
-          xhr.overrideMimeType( "text/html; charset=UTF-8" );
+        beforeSend: function(xhr) {
+          xhr.overrideMimeType("text/html; charset=UTF-8");
         },
         success: function(data, textStatus, jqXHR) {
           $("#content").html(data);
@@ -29,7 +33,7 @@ $(window).ready(function(){
 		}, 100);
 	    
 	    // Debug print
-	    console.log("No onhashchange event. Using timer for updating content.");
+	    console.log('No "onhashchange" event. Using timer for updating content.');
 	} else {
 	    $(window).on('hashchange', function() {
 	    	loadContent();
