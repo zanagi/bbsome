@@ -90,7 +90,13 @@ $(window).ready(function(){
 		animateOpacity("#page", 1.0, 2000);
 	};
 
+	var setEvents = function() {
+		$("#search-area").click(function(){
+			document.getElementById("search").focus();
+		});
+	}
 	
+	setEvents();
 	animate();
 	loadContent();
 	

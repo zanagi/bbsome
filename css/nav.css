@@ -54,6 +54,10 @@
 	border: 1px solid #cfcfcf;
 }
 
+#search-area:hover {
+	cursor: text;
+}
+
 #search-icon {
 	position: absolute;
 	
