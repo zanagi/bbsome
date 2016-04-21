@@ -2,7 +2,7 @@
    position: relative;
    bottom: 0;
    width: 100%;
-   height: 10em;   
+   height: 12em;   
    background-color: #e6e6e6;
    opacity: .0;
 }
@@ -18,7 +18,7 @@
 
 #footer img {
 	display: block;
-	height: 5em;
+	height: 7em;
 	margin: 0 auto;
 }
 
