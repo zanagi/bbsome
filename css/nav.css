@@ -46,15 +46,27 @@
 	font-weight: bold;
 }
 
-#search {
-	width: 12em;
+#search-area {
+	background-color: white;
+	height: 2.5em;
+	width: 13em;
+	top: 1.25em;
+	border: 1px solid #cfcfcf;
 }
 
 #search-icon {
 	position: absolute;
-	height: 3em;
-	top: 0.9em;
-	left: 10em;
+	
+	height: 100%;
+	left: 0em;
+}
+
+#search {
+	position: absolute;
+	border:none;
+	width: 9em;
+	height: 100%;
+	left: 3em;
 }
 
 #search-icon:hover {
