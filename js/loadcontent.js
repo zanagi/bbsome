@@ -51,6 +51,7 @@ $(window).ready(function(){
 		          xhr.overrideMimeType("text/html; charset=UTF-8");
 		        },
 		        success: function(data, textStatus, jqXHR) {
+		          $("#content").css("top", $("#nav-all").height());
 		          $("#content").html(data);
 		          $("#content").fadeIn(fadeTime);
 		          animateOpacity("#footer", 1.0, fadeTime); // Having to make a separate call for footer due to problems with jquery multiple selector
