@@ -47,14 +47,14 @@
 }
 
 #search {
-	width: 15em;
+	width: 12em;
 }
 
 #search-icon {
 	position: absolute;
 	height: 3em;
 	top: 0.9em;
-	left: 13em;
+	left: 10em;
 }
 
 #search-icon:hover {
