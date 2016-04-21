@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <title>Beautiful Beijing &amp; Some</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/nav.css" />
 <link type="text/css" rel="stylesheet" href="css/main.css" />
+<link type="text/css" rel="stylesheet" href="css/footer.css" />
+
+<!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
+	<!-- Old background for animation -->
+	<!--  
 	<div id="bg">
 	  <img id="back" src="images/background2.png" alt="">
 	  <img id="front" src="images/background1.png" alt="">
-	</div>
-	<div id="titleDiv">
-		<img id="title" src="images/title.png" alt="">
-	</div>
-	<div id="content">
-		<div id="navbar">
-			<a href="#home">Etusivu</a><a href="#some">SOME</a><a href="#hints">Ohjeita</a><a href="#contacts">Profiilit</a>
+	</div> 
+	-->
+	
+	<div class="container">
+		<div id="page">
+			<div id="nav-all">
+				<div id="navbar" class="row">
+					<span class="col-sm-1"></span> <!-- Spacing span -->
+					<a id="nav-home" class="navlink" href="#home"><span class="col-sm-2">Home</span></a>
+					<a id="nav-market" class="navlink" href="#market"><span class="col-sm-2">Market Research</span></a>
+					<a id="nav-some" class="navlink" href="#some"><span class="col-sm-2">Social Media</span></a>
+					<a id="nav-success" class="navlink" href="#success"><span class="col-sm-2">Success Stories</span></a>
+					<div class="col-sm-1">
+						<a href="#signin" class="btn btn-warning" style="height: 2.5em; margin-top: 1.25em;">Sign In</a>
+					</div>
+					<div class="col-sm-2">
+						<input type="search" id="search" placeholder="Search..."  style="height: 2.5em; margin-top: 1.25em;" />
+						<img src="images/searchicon.png" id="search-icon" />
+					</div>
+				</div>
+				
+				<div id="subbar" class="row">
+					<!-- Home sub -->
+					<div id="nav-home-sub" class="sub-row">
+						<a href="#home-test" class="navlink-sub"><span class="col-sm-2">Test1</span></a>
+						<a href="#home-test2" class="navlink-sub"><span class="col-sm-2">Test2</span></a>
+						<a href="#home-test3" class="navlink-sub"><span class="col-sm-2">Test3</span></a>
+						<a href="#home-test4" class="navlink-sub"><span class="col-sm-2">Test4</span></a>
+					</div>
+					
+					<!-- Market Sub -->
+					<div id="nav-home-sub" class="sub-row"></div>
+					
+					<!-- SOME Sub -->
+					<div id="nav-home-some" class="sub-row"></div>
+					
+					<!-- Success Sub -->
+					<div id="nav-home-success" class="sub-row"></div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div id="content" class="col-sm-12">
+				</div>
+			</div>
 		</div>
+	</div>
+	
 		
-		<div id="text-content">
+	<div id="footer" class="container">
+		<div class="row image-row">
+			<span class="col-sm-2"></span>
+			<div class="col-sm-2"><img src="images/footer/aalto_logo.png" /></div>
+			<div class="col-sm-2"><img src="images/footer/bblogo.png" /></div>
+			<div class="col-sm-2"><img src="images/footer/cleantech_logo.png" /></div>
+			<div class="col-sm-2"><img src="images/footer/finpro_logo.png" /></div>
+			<span class="col-sm-2"></span>
+		</div>
+		<div class="row">
+			<p class="centered">2016 Elias Jäämeri, Santeri Mentu, Henrik Ollus, Johanna Rantanen, Matias Ristimäki, Yuanqi Shan</p>
+			<p class="centered">This website was implemented for Beautiful Beijing as a course project in Aalto University</p>
 		</div>
 	</div>
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/loadcontent.js"></script>
 </body>
 </html>
