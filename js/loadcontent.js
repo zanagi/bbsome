@@ -1,6 +1,18 @@
 var debug = true;
 
 $(window).ready(function(){
+	var showSubBar = function(prefix) {
+		var hash = prefix;
+		
+		// Show old
+		// if(!hash) hash = window.location.hash.substring(1) || 'home';
+		
+		var subBarId = $('a[href="#' + hash + '"]').attr("id") + "-sub";
+		
+		$(".active-sub").toggleClass("active-sub");
+		$("#" + subBarId).toggleClass("active-sub");
+	}
+	
 	var loadContent = function() {
 		var hash = window.location.hash.substring(1) || 'home';
 		var url = "content/" + hash + ".html";
@@ -8,12 +20,6 @@ $(window).ready(function(){
 		var fadeTime = 1000;
 		
 		$(".active-sub-button").toggleClass("active-sub-button"); // In each case, clear active state from subbar button
-		
-		var showSubBar = function(prefix) {
-			var subBarId = $('a[href="#' + prefix + '"]').attr("id") + "-sub";
-			$(".active-sub").toggleClass("active-sub");
-			$("#" + subBarId).toggleClass("active-sub");
-		}
 		
 		if(hash.indexOf('-') === -1) {
 			// Temp: Change active nav button
