@@ -9,18 +9,27 @@ $(window).ready(function(){
 		
 		$(".active-sub-button").toggleClass("active-sub-button"); // In each case, clear active state from subbar button
 		
+		var showSubBar = function(prefix) {
+			var subBarId = $('a[href="#' + prefix + '"]').attr("id") + "-sub";
+			$(".active-sub").toggleClass("active-sub");
+			$("#" + subBarId).toggleClass("active-sub");
+		}
+		
 		if(hash.indexOf('-') === -1) {
 			// Temp: Change active nav button
 			$(".active").toggleClass("active");
 			$('a[href="#' + hash + '"]').toggleClass("active");
 			
 			// Update subbar
-			var subBarId = $('a[href="#' + hash + '"]').attr("id") + "-sub";
-			$(".active-sub").toggleClass("active-sub");
-			$("#" + subBarId).toggleClass("active-sub");
+			showSubBar(hash);
 		} else {
 			// TODO: Check that active navbar button is correct
-			
+			var p = hash.split('-')[0];
+			var jqn = $('a[href="#' + p + '"]');
+			if(!(jqn.hasClass("active"))) {
+				jqn.toggleClass("active");
+				showSubBar(p);
+			}
 			
 			// Subbar button clicked
 			$('a[href="#' + hash + '"]').toggleClass("active-sub-button");
