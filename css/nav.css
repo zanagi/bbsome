@@ -95,6 +95,9 @@
 	#subbar {
 		display: none;
 	}
+	#search-area {
+		display: none;
+	}
 }
 
 #subbar .sub-row {
