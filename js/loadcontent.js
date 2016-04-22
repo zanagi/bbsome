@@ -19,11 +19,15 @@ $(window).ready(function(){
 		}
 	}
 	
+	var setContentMargin = function() {
+		$("#content").css("top", $("#navi").height());;
+	}
+	
 	var loadContent = function() {
 		var hash = window.location.hash.substring(1) || 'home';
 		var url = "content/" + hash + ".html";
 		var subbarurl = "subbar/" + hash + ".html";
-		var fadeTime = 1000;
+		var fadeTime = 500;
 		
 		$(".active-sub-button").toggleClass("active-sub-button"); // In each case, clear active state from subbar button
 		
@@ -57,7 +61,7 @@ $(window).ready(function(){
 		          xhr.overrideMimeType("text/html; charset=UTF-8");
 		        },
 		        success: function(data, textStatus, jqXHR) {
-		          $("#content").css("top", $("#navi").height());
+		          setContentMargin();
 		          $("#content").html(data);
 		          $("#content").fadeIn(fadeTime);
 		          animateOpacity("#footer", 1.0, fadeTime); // Having to make a separate call for footer due to problems with jquery multiple selector
@@ -106,6 +110,9 @@ $(window).ready(function(){
 	var setEvents = function() {
 		$("#search-area").click(function(){
 			document.getElementById("search").focus();
+		});
+		$(".navbar-nav li a:not(:has(*)),#navi .navbar-brand").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
 		});
 	}
 	
