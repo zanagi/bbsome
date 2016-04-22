@@ -1,0 +1,47 @@
+#slides-area, #slides {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#slides li {
+	display: none;
+}
+
+#slides li.slide-active {
+	display: inline;
+}
+
+#slides li iframe {
+	position: relative; 
+	width: 60%; 
+	height: 30em; 
+	left: 20%;
+}
+
+#slides-control {
+	position: absolute;
+	bottom: .0;
+	left: 50%;
+	width: 10em;
+	margin-left: -5em;
+	list-style-type: none;
+}
+
+#slides-control li {
+	display: inline-block;
+}
+
+#slides-control li a {
+	width: 1em;
+	height: 1em;
+	margin: 0 0.5em;
+	display: block;
+	border-radius: 2em;
+	background-color: red;
+	cursor: pointer;
+}
+
+#slides-control li.slides-control-active a {
+	background-color: yellow;
+}

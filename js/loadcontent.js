@@ -108,11 +108,24 @@ $(window).ready(function(){
 	};
 
 	var setEvents = function() {
+		/*
 		$("#search-area").click(function(){
 			document.getElementById("search").focus();
 		});
+		*/
+		// Nabnar collapse
 		$(".navbar-nav li a:not(:has(*)),#navi .navbar-brand").click(function(event) {
 			$(".navbar-collapse").collapse('hide');
+		});
+		
+		// Slides
+		$("body").on("click","#slides-control li",function(){
+			$(".slides-control-active").toggleClass("slides-control-active");
+			$(this).toggleClass("slides-control-active");
+			
+			$(".slide-active").toggleClass("slide-active");
+			var slide = $("#slides-control li").index($(this)) + 1;
+			$("#slides li:nth-child(" + slide + ")").toggleClass("slide-active");
 		});
 	}
 	
