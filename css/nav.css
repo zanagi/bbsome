@@ -4,13 +4,9 @@
 	left: 0;
 	top: 0;
 	z-index: 5;
-}
-#navi {
 	background-color: #e6e6e6;
 	font-family: 'Quicksand', sans-serif;
-
 }
-
 
 #navbar {
 	position: relative;

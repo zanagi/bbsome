@@ -66,6 +66,7 @@ body {
 	padding: 5em;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
+	width: 80%; margin: 0 auto;
 }
 
 #text-content .text img {
