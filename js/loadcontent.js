@@ -11,6 +11,12 @@ $(window).ready(function(){
 		
 		$(".active-sub").toggleClass("active-sub");
 		$("#" + subBarId).toggleClass("active-sub");
+		
+		if($("#" + subBarId).children().length === 0) {
+			$("#subbar").hide();
+		} else {
+			$("#subbar").show();
+		}
 	}
 	
 	var loadContent = function() {
