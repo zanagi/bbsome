@@ -123,6 +123,12 @@ $(window).ready(function(){
 			$(".slides-control-active").toggleClass("slides-control-active");
 			$(this).toggleClass("slides-control-active");
 			
+			// Pause video
+			var iframe = $(".slide-active iframe")[0];
+			if(iframe){
+				iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+			}
+			
 			$(".slide-active").toggleClass("slide-active");
 			var slide = $("#slides-control li").index($(this)) + 1;
 			$("#slides li:nth-child(" + slide + ")").toggleClass("slide-active");
