@@ -1,0 +1,19 @@
+.introduction-area {
+	position: relative; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 30em;
+	height: auto;
+	color: white;
+}
+
+.introduction-area .introduction-title {
+	top: 2em;
+	font-size: 5em;
+}
+
+.introduction-area .introduction-text {
+	top: 6em;
+	font-size: 1.5em;
+}
