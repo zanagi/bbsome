@@ -9,11 +9,14 @@
 }
 
 .introduction-area .introduction-title {
-	top: 2em;
 	font-size: 5em;
 }
 
 .introduction-area .introduction-text {
-	top: 6em;
 	font-size: 1.5em;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
