@@ -20,6 +20,16 @@
 	left: 20%;
 }
 
+@media (max-width: 768px) {
+	#slides {
+		padding: 0;
+	}
+	#slides li iframe {
+		left: 0;
+		width: 100%;
+	}
+}
+
 #slides-control {
 	position: absolute;
 	bottom: .0;
