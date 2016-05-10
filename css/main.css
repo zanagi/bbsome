@@ -72,12 +72,13 @@ body {
 	padding: 5em;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
-	width: 90%; margin: 0 auto;
+	width: 60%; 
+	margin: 0 auto;
 }
 
-@media (max-width: 768em) {
+@media (max-width: 768px) {
 	#text-content .text {
-		padding: 10px;
+		padding: 20px;
 		width: 100%;
 	}
 }
