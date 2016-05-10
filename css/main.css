@@ -1,6 +1,12 @@
+html {
+	overflow-y: scroll;
+}
+
 body {
+	width: 100%;
 	background-color: #FAFAFA;
 }
+
 .centered {
 	text-align: center;
 }

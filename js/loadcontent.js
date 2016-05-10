@@ -20,7 +20,7 @@ $(window).ready(function(){
 	}
 	
 	var setContentMargin = function() {
-		$("#content").css("top", $("#navi").height());;
+		$("#content").css("top", $("#navi").height());
 	}
 	
 	var loadContent = function() {
