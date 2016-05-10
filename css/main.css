@@ -75,6 +75,13 @@ body {
 	width: 90%; margin: 0 auto;
 }
 
+@media (max-width: 768em) {
+	#text-content .text {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
 #text-content .text img {
 	max-width: 100%;
 }
