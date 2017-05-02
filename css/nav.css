@@ -5,7 +5,7 @@
 	top: 0;
 	padding: 0;	
 	z-index: 5;
-	background-color: #e6e6e6;
+	background-color: red;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -15,10 +15,8 @@
 	min-height: 5em;
 	height: auto;
 	background-color: #e6e6e6;
-
 	margin: auto;
 	z-index: 5;
-
 	border-bottom: 1px solid black;
 }
 
@@ -48,39 +46,6 @@
 	font-weight: bold;
 }
 
-#search-area {
-	background-color: white;
-	height: 2.5em;
-	width: 13em;
-	top: 1.25em;
-	border: 1px solid #cfcfcf;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-#search-area:hover {
-	cursor: text;
-}
-
-#search-icon {
-	position: absolute;
-	height: 100%;
-	left: 0em;
-}
-
-#search {
-	position: absolute;
-	border:none;
-	width: 9em;
-	height: 100%;
-	left: 3em;
-}
-
-#search-icon:hover {
-	cursor: pointer;
-}
 
 #subbar {
 	position: relative;
